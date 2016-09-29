@@ -180,30 +180,30 @@
                 $table_id = "T_";
                 $table_id .= $global_id;
                 
-            		$chunks_query = $connection_II->prepare('SELECT chunk_name FROM top_chunks WHERE global_id = :global_id');
-            		$chunks_query->bindParam(":global_id", $global_id);
-            		$chunks_query->execute();
-            		$chunks_query_results = $chunks_query->fetchAll();
-            		$chunks_query_results_size = count($chunks_query_results);
-            		
-            		$name_query = $connection_II->prepare('SELECT name FROM main WHERE global_id = :global_id');
-            		$name_query->bindParam(":global_id", $global_id);
-            		$name_query->execute();
-            		$name_query_results = $name_query->fetch();
-            		
-            		$word_query = $connection_II->prepare('SELECT word FROM top_words WHERE global_id = :global_id ORDER BY rank');
-            		$word_query->bindParam(":global_id", $global_id);
-            		$word_query->execute();
-            		$word_query_results = $word_query->fetchAll();
-            		$word_query_results_size = count($word_query_results);
-            		
-            		$image_query = $connection_II->prepare('SELECT scatterplot, word_cloud FROM images WHERE global_id = :global_id');
-            		$image_query->bindParam(":global_id", $global_id);
-            		$image_query->execute();
-            		$image_query_results = $image_query->fetch(PDO::FETCH_ASSOC);
+		$chunks_query = $connection_II->prepare('SELECT chunk_name FROM top_chunks WHERE global_id = :global_id');
+		$chunks_query->bindParam(":global_id", $global_id);
+		$chunks_query->execute();
+		$chunks_query_results = $chunks_query->fetchAll();
+		$chunks_query_results_size = count($chunks_query_results);
 
-            		$SP_name = "/";
-		            $SP_name .= $corpus;
+		$name_query = $connection_II->prepare('SELECT name FROM main WHERE global_id = :global_id');
+		$name_query->bindParam(":global_id", $global_id);
+		$name_query->execute();
+		$name_query_results = $name_query->fetch();
+
+		$word_query = $connection_II->prepare('SELECT word FROM top_words WHERE global_id = :global_id ORDER BY rank');
+		$word_query->bindParam(":global_id", $global_id);
+		$word_query->execute();
+		$word_query_results = $word_query->fetchAll();
+		$word_query_results_size = count($word_query_results);
+
+		$image_query = $connection_II->prepare('SELECT scatterplot, word_cloud FROM images WHERE global_id = :global_id');
+		$image_query->bindParam(":global_id", $global_id);
+		$image_query->execute();
+		$image_query_results = $image_query->fetch(PDO::FETCH_ASSOC);
+
+		$SP_name = "/";
+		$SP_name .= $corpus;
                 $SP_name .= "/Images/";
                 $SP_name .= $image_query_results["scatterplot"];
 
@@ -217,7 +217,7 @@
                 echo "<td><img src=".$SP_name." alt='Scatter Plot' class='thumbnail' onmoseover=\"this.height='400px'\” onmousout=\"this.height='100px'\" height='150px' width='auto'/></td>";
                 echo "<td id='$table_id'><a href='individual_topic?global_id=$global_id&topic_number=$i' class='white-text pointer' id='$global_id'>Topic $i</a></td>";
 
-		            if(!empty($user))
+		if(!empty($user))
                 {
                   echo "<td id='$global_id' onclick='transform_tag(this)' class='pointer'>";
                   
@@ -271,7 +271,7 @@
                 echo "</div></td>";
                 echo "<td class='row-data'><div class='row-height'>";
 		
-		            $chunks;
+		$chunks;
 		            
                 foreach($chunks_query_results as $key => $value)
                 {
