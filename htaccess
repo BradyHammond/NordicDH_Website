@@ -1,0 +1,17 @@
+# Enable ModRewrite
+Options +FollowSymLinks
+
+# Turn on rewrite engine
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCTIPT_FILENAME} !-f
+
+RewriteRule ^home$ ./index.php
+RewriteRule ^about$ ./about.php
+RewriteRule ^contact$ ./contact.php
+RewriteRule ^combined_topics$ ./combined.php
+RewriteRule ^individual_topic$ ./individual.php
+RewriteRule ^login$ ./login.php
+RewriteRule ^words$ ./words.php
+RewriteRule ^words_search$ ./words_search.php

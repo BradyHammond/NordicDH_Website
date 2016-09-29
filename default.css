@@ -1,0 +1,299 @@
+	.jumbotron 
+	{
+	  margin-bottom: 0px;
+	  background-image: url("Sweden_2.jpg");
+	  background-position: 0% 25%;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  color: white;
+	  text-shadow: black 0.3em 0.3em 0.3em;
+	}
+	
+	body
+	{
+	  background-color: #333;
+	}
+	
+	#instructions
+	{
+	  text-align: center;
+	}
+	
+	.panel-default
+	{
+	  color: #fff;
+	  border:5px solid #222222;
+	  margin: 0 auto;
+	}
+	
+	#main-panel
+	{
+	  width: 60%;
+	}
+	
+	#passage-select-panel
+	{
+	  width: 100%;
+	  height: 200px;
+	  overflow-y: scroll;
+	  text-align: left;
+	  font-size: 20px;
+	}
+	
+	#passage-view-panel
+	{
+	  margin-top: 20px;
+	}
+	
+	#passage-view-panel-body
+	{
+	  color: #fff;
+	  width: 100%;
+	  height: 600px;
+	  overflow-y: scroll;
+	}
+	
+	.panel-default > .panel-heading
+	{
+	  color:#fff;
+	  background-color: #222222;
+	  border-color: #222222
+	
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+	  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+	
+	.panel-body
+	{
+	  color: white;
+	  background-color: #333;
+	}
+	
+	.col-md-1
+	{
+	  text-align: center;
+	}
+	
+	.btn-default,
+	.btn-default:focus 
+	{
+	  color: #333;
+	  text-shadow: none;
+	  background-color: #fff;
+	  border: 1px solid #fff;
+	}
+	
+	.btn-default:hover
+	{
+	  background-color: #999
+	}
+	
+	.lead
+	{
+	  padding-top: 30px;
+	  text-align: center;
+	}
+	
+	.panel-heading
+	{
+	  background-color: #222;
+	  color: #fff;
+	  text-align: center;
+	}
+	
+	footer
+	{
+	  color: #fff;
+	  text-align: center;
+	}
+	
+	.page-header
+	{
+	  padding-top: 30px;
+	  color:#fff;
+	}
+	
+	.table
+	{
+	  color:#fff;
+	}
+	
+	.col-xs-6, 
+	.col-md-4
+	{
+	  text-align: center;
+	}
+	
+	td
+	{
+	  text-align: center;
+	}
+      
+	h1
+	{
+	  color:#fff;
+	}
+	
+	.login
+	{
+	  padding-top: 30px;
+	  padding-bottom:30px;
+	  text-align: center;
+	}
+	
+	.navbar .navbar-nav 
+	{
+	  display: inline-block;
+	  float: none;
+	  vertical-align: top;
+	}
+	
+	.navbar .navbar-collapse 
+	{
+	  text-align: center;
+	}
+	
+	#admin
+	{
+	  padding-top: 10px;
+	}
+	
+	.return-button-center
+	{
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+	  text-align:center;
+	}
+       	
+	#go-button
+	{
+  	  margin-top: 20px;
+  	  text-align: center;
+	}
+   	
+	#corpus,
+	#chunk-size,
+	#part-of-speech,
+	#topic-number
+	{
+  	  margin-bottom: 20px;
+  	  text-align: center;
+	}
+   	
+	#parameters-tag
+	{
+  	  margin: 0px;
+	}
+   	
+	.thumbnail
+	{
+  	  -moz-transition: all 1s ease;
+  	  -ms-transition: all 1s ease;
+  	  -o-transition: all 1s ease;
+  	  -webkit-transition: all 1s ease;
+  	  transition: all 1s ease;
+	}
+
+	.thumbnail:hover
+	{
+   	  -moz-transform:scale(2) translate(50px, 0px);
+  	  -ms-transform:scale(2) translate(50px, 0px);
+  	  -o-transform:scale(2) translate(50px, 0px);
+  	  -webkit-transform:scale(2) translate(50px, 0px);
+  	  transform:scale(2) translate(50px, 0px);
+	}
+
+	.passage-link
+	{
+	  color: #fff; 
+	  cursor: pointer;
+	}
+	
+	#admin
+	{
+	  color: #9d9d9d;
+	}
+	
+	#coming-soon
+	{
+	  margin-top: 100px;
+	}
+	
+	.white-text
+	{
+	  color: #fff;
+	}
+	
+	.pointer
+	{
+	  cursor: pointer;
+	}
+	
+	.input-standard
+	{
+	  color: #000;
+	  margin: 10px;
+	}
+	
+	.extra-small-margin
+	{
+	  margin-bottom: 5px;
+	}
+	
+	.small-padding
+	{
+	  padding: 10px 10px 10px 10px;
+	}
+	
+	.anti-nav-margin
+	{
+	  margin-top: 100px;
+	}
+	
+	#contact-message
+	{
+	  margin-top: 20px;
+	  background-color: #555;
+	}
+	
+	.red-text
+	{
+	  color: #f00;
+	}
+		
+	.row-height
+	{
+	  height: 150px;
+	}
+	
+	.row-data
+	{
+	  max-height: 150;
+	  overflow: hidden;
+	}
+	
+	.row-height:hover
+	{
+	  height: 100%;
+	}
+	
+	.words-header
+	{
+	  margin-top: 70px;
+	}
+	
+	.hover
+	{
+	  cursor: pointer;
+	  text-decoration: underline;
+	}
+	
+	.align-left
+	{
+	  text-align: left;
+	}
+	
+	.small-margin
+	{
+	  margin-top: 20px;
+	}
